@@ -28,3 +28,25 @@
 1. `*` What are pre-commit hooks and post-commit hooks, and what are they for?
 
 1. `*` How do I change the last commit without adding a new commit?
+
+## Answers
+
+1. git log
+
+2. git reset --soft HEAD~1
+
+3. git checkout -b branch_name\
+   git tag tag_name
+
+4. Add file to .gitignore
+
+5. git status or git status --merge to identify conflicted files\
+   git merge --abort to abort merge\
+   git reset to reset files files to good states
+
+6. Pre-commit hooks are used to identify issue before commit start. For example, prevent commit large files. Ref: https://github.com/pre-commit/pre-commit-hooks \
+   Post-commit hooks are used, primarily to notify. For example, send email every time you commit. Ref: https://www.atlassian.com/git/tutorials/git-hooks
+
+7. git add file_name to add modified file\
+   git commit --amend
+   
